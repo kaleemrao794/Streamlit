@@ -5,7 +5,7 @@ import seaborn as sns
 from pandas_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
-# webapp ka title
+# webapp title
 st.markdown('''
 # **Exploratory Data Analysis Web Application**
 This app is developed by Kaleem Ullah called **EDA App**
