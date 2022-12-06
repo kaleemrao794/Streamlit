@@ -7,7 +7,7 @@ from streamlit_pandas_profiling import st_profile_report
 
 # webapp title
 st.markdown('''
-# **Exploratory Data Analysis Web Application**
+# **Exploratory Data Analysis**
 This app is developed by Kaleem Ullah called **EDA App**
    ''')
 
