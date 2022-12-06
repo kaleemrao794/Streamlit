@@ -36,14 +36,14 @@ else:
       # example dataset
       @st.cache
       def load_data():
-         a = pd.DataFrame(np.random.randn(100,6),
-                           columns=['J','U','N',"A",'I','D'])
+         a = pd.DataFrame(np.random.rand(100,6),
+                           columns=['J','U','N','A','I','D'])
          return a
-         df = load_data()
-         pr = ProfileReport(df, explorative=True)
-         st.header('**Input DF**')
-         st.write(df)
-         st.write('---')
-         st.header('**Profiling Report with Pandas**')
-         st_profile_report(pr)
+      df = load_data()
+      pr = ProfileReport(df, explorative=True)
+      st.header('**Input DataFrame**')
+      st.write(df)
+      st.write('---')
+      st.header('**Profiling Report with Pandas**')
+      st_profile_report(pr)
 
